@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.absCont {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+/* /UTILITY */
+
+/* DEBUG CLASS */
+.debug .lgContent {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background-color: antiquewhite;
+}
+
+.debug main {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background-color: aliceblue;
+}
+
+.debug header {
+    width: 20%;
+    height: 100%;
+    background-color: pink;
+}
+
+.debug .generalContainer {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.debug footer {
+    height: 10vh;
+    width: 100%;
+    background-color: brown;
+    position: absolute;
+}
+
+.debug .bar {
+    height: 10vh;
+    width: 100%;
+    background-color: #0000ff33;
+}
+
+.debug .Content {
+    overflow: auto;
+    height: calc(100vh - 10vh);
+    width: 100%;
+}
+
+.debug .square {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+}
