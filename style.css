@@ -6,20 +6,17 @@
 
 #lgCont {
     width: 100%;
-    height: calc(100vh - 7vh);
+    height: 100vh;
     background-color: #141922;
     color: #7D7F84;
     font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 517px;
 }
 
 main {
     width: 100%;
-    height: calc(100vh - 7vh);
-}
-
-footer {
-    height: 7vh;
-    width: 100%;
+    height: calc(100vh - 80px);
 }
 
 /* /GENERAL */
@@ -46,7 +43,7 @@ footer {
 /* DEBUG CLASS */
 .debug .lgContent {
     width: 100%;
-    height: calc(100vh - 10vh);
+    height: 100vh;
     background-color: antiquewhite;
 }
 
@@ -105,6 +102,8 @@ header {
     width: 170px;
     height: 100%;
     background-color: black;
+    min-height: 517px;
+
 }
 
 header .sideBar .menu {
@@ -179,6 +178,7 @@ header .sideBar {
         filter: brightness(1);
         width: 1rem;
         vertical-align: middle;
+        margin-right: 0.5rem;
 }
 
 .sideBar .user p {
@@ -198,5 +198,81 @@ header .sideBar {
     width: 1rem;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.sideBar .userName {
+    font-weight: bold;
+    color: white;
+    padding-top: 0.5rem;
 }
 /* / USER */
+/* ************
+  /  HEADER
+************ */
+
+
+/* ************
+MAIN CONTAINER
+************ */
+#mainContainer {
+    width: 100%;
+    height: 100%;
+}
+/* UPGRADE */
+#upgrade {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    font-size: 0.5rem;
+    line-height: 80px;
+    text-align: right;
+    position: fixed;
+}
+
+#upgrade h3{
+    border: 1px solid white;
+    padding: 0.5rem 1rem ;
+    border-radius: 1rem;
+    display: inline;
+    margin-right: 162.1px;
+}
+/* / UPGRADE */
+
+
+
+/* CONTENT */
+#Content .contentNav ul {
+    padding-top: 80px;
+    list-style-type: none;
+    margin: auto;
+}
+
+#Content .contentNav li {
+    float: left;
+    margin: 1rem;
+}
+
+
+/* / CONTENT */
+
+/* ************
+ / MAIN CONTAINER
+************ */
+
+
+
+/* ************
+    FOOTER
+************ */
+footer {
+    background-color: #282828;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+/* ************
+  /  FOOTER
+************ */
