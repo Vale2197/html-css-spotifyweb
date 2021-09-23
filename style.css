@@ -100,9 +100,10 @@ main {
 
 header {
     width: 170px;
-    height: 100%;
+    height: calc(100% - 80px);
     background-color: black;
-    min-height: 517px;
+    position: fixed;
+    overflow: auto;
 
 }
 
@@ -236,7 +237,6 @@ MAIN CONTAINER
     padding: 0.5rem 1rem ;
     border-radius: 1rem;
     display: inline;
-    margin-right: 162.1px;
 }
 /* / UPGRADE */
 
@@ -247,6 +247,7 @@ MAIN CONTAINER
     padding-top: 80px;
     list-style-type: none;
     margin: auto;
+    padding-left: 170px;
 }
 
 #Content .contentNav li {
