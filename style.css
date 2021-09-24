@@ -19,8 +19,12 @@ main {
     height: calc(100vh - 80px);
 }
 
+body {
+    overflow: hidden;
+}
+
 /* /GENERAL */
-.clearfix {
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
@@ -275,7 +279,6 @@ MAIN CONTAINER
 }
 
 .elements .img {
-    width: 200px;
     padding-bottom: 0.5rem;
 }
 
@@ -295,12 +298,14 @@ MAIN CONTAINER
 .elements .row {
     padding-bottom: 2rem;
     padding-top: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .createforUser {
-    padding-bottom: 80px;
+    padding-bottom: 2rem;
 }
+
+
 /*  / ELEMENT */
 
 /* ************
