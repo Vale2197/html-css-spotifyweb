@@ -323,7 +323,110 @@ footer {
     height: 80px;
     width: 100%;
     position: fixed;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    font-size: 13px;
 }
+
+/* SEZIONE ALBUM */
+footer .album .img {
+    width: 50px;
+    padding-right: 0.5rem;
+}
+
+footer .album {
+    align-items: center;
+    flex-grow: 1;
+}
+
+footer .album .titolo {
+    padding-right: 0.5rem;
+}
+
+footer .album .titolo span {
+    display: block;
+}
+
+footer .album i {
+    padding: 0 0.5rem;
+    color: #878787;
+}
+/* / SEZIONE ALBUM */
+
+
+/* MENU PLAY */
+footer .menuPlay i {
+    font-size: 1rem;
+    padding-right: 1.5rem;
+}
+
+.menuPlay .icons {
+    align-items: center;
+    justify-content: center;
+}
+
+footer .menuPlay i.fa-play-circle {
+    font-size: 1.5rem;
+}
+
+footer .menuPlay {
+    flex-grow: 3;
+    text-align: center;
+}
+
+footer .menuPlay .playBar {
+    width: 100%;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.menuPlay .bar {
+    margin: auto;
+    border: 1px solid #878787;
+    height: 4px;
+    width: 80%;
+    margin: 0 1rem;
+}
+
+.menuPlay .bar .insideBar {
+    width: 30%;
+    background-color: white;
+    height: 3px;
+}
+
+.menuPlay .playBar span {
+    vertical-align: middle;
+}
+/* / MENU PLAY */
+
+
+
+/* VOLUME */
+footer .volume {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+}
+
+footer .volumeBar {
+    border: 1px solid #878787;
+    height: 4px;
+    width: 40%;
+}
+
+footer .volume i {
+    padding-right: 0.8rem;
+}
+
+footer .volume .volumeBar .insideBar {
+    width: 30%;
+    background-color: white;
+    height: 3px;
+}
+/* / VOLUME */
 /* ************
   /  FOOTER
 ************ */
