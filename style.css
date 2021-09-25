@@ -23,6 +23,19 @@ body {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: #7D7F84;
+}
+
+a:hover {
+    color: white;
+}
+
+i {
+    cursor: pointer;
+}
+
 /* /GENERAL */
 .clearfix::after {
     display: table;
@@ -108,7 +121,7 @@ header {
     background-color: black;
     position: fixed;
     overflow: auto;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -138,11 +151,31 @@ header .sideBar {
 .homeMenu {
     line-height: 1.4rem;
     margin-top: 1rem;
+    margin-left: -1rem;
 }
 
 .homeMenu p {
     display: inline-block;
     vertical-align: middle;
+}
+
+.homeMenu .home, .homeMenu .search, .homeMenu .library {
+    padding-left: 1rem;
+}
+
+.homeMenu .home {
+    border-left: 3px solid #ADFF2F;
+    padding-left: calc(1rem - 3px);
+}
+
+.homeMenu .home:hover img{
+    filter: brightness(1);
+}
+.homeMenu .search:hover img{
+    filter: brightness(1);
+}
+.homeMenu .library:hover img{
+    filter: brightness(1);
 }
 
 /* / HOME MENU */
@@ -171,6 +204,15 @@ header .sideBar {
     background-color: #A3A3A3;
     margin: 0.5rem 0.5rem;
     margin-left: 0rem;
+}
+
+.addPlaylist .square i {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
 }
 /* / PLAYLIST MENU */
 
@@ -235,6 +277,7 @@ MAIN CONTAINER
     line-height: 80px;
     text-align: right;
     position: fixed;
+    z-index: 1;
 }
 
 #upgrade h3{
@@ -242,6 +285,11 @@ MAIN CONTAINER
     padding: 0.5rem 1rem ;
     border-radius: 1rem;
     display: inline;
+    cursor: pointer;
+}
+
+#upgrade h3:hover {
+    font-size: 0.7rem;
 }
 /* / UPGRADE */
 
@@ -253,11 +301,19 @@ MAIN CONTAINER
     list-style-type: none;
     margin: auto;
     padding-left: 170px;
+    justify-content: center;
 }
 
 #Content .contentNav li {
-    float: left;
     margin: 1rem;
+}
+
+#Content .contentNav ul li:first-child hr {
+    width: 40%;
+    margin: auto;
+    background-color: #ADFF2F;
+    border: 1px solid #ADFF2F;
+    margin-top: 0.3rem;
 }
 
 #Content {
@@ -280,6 +336,7 @@ MAIN CONTAINER
 
 .elements .img {
     padding-bottom: 0.5rem;
+    position: relative;
 }
 
 .elements p {
@@ -305,6 +362,26 @@ MAIN CONTAINER
     padding-bottom: 2rem;
 }
 
+.elements .element img {
+    display: block;
+}
+
+.elements .element i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 2.5rem;
+    visibility: hidden;
+}
+
+.elements .element:hover .overlay {
+    mix-blend-mode: overlay;
+}
+
+.elements .element:hover i {
+    visibility: visible;
+}
 
 /*  / ELEMENT */
 
@@ -329,6 +406,10 @@ footer {
     font-size: 13px;
 }
 
+footer .cerchio {
+    visibility: hidden;
+}
+
 /* SEZIONE ALBUM */
 footer .album .img {
     width: 50px;
@@ -351,6 +432,14 @@ footer .album .titolo span {
 footer .album i {
     padding: 0 0.5rem;
     color: #878787;
+}
+
+footer .album .icons a:hover i {
+    color: white;
+}
+
+footer .album .icons {
+    flex-direction: column;
 }
 /* / SEZIONE ALBUM */
 
@@ -393,10 +482,31 @@ footer .menuPlay .playBar {
     width: 30%;
     background-color: white;
     height: 3px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.playBar .insideBar .cerchio {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .menuPlay .playBar span {
     vertical-align: middle;
+}
+
+.menuPlay .bar:hover .insideBar {
+    background-color: #ADFF2F;
+}
+
+.menuPlay .bar:hover .cerchio {
+    visibility: visible;
+}
+
+.menuPlay .fa-play-circle:hover {
+    font-size: 1.8rem;
 }
 /* / MENU PLAY */
 
@@ -425,6 +535,23 @@ footer .volume .volumeBar .insideBar {
     width: 30%;
     background-color: white;
     height: 3px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .volume .insideBar .cerchio {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.volume .volumeBar:hover .insideBar {
+    background-color: #ADFF2F;
+}
+
+.volume .volumeBar:hover .cerchio {
+    visibility: visible;
 }
 /* / VOLUME */
 /* ************
