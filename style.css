@@ -404,6 +404,7 @@ footer {
     padding: 1rem;
     align-items: center;
     font-size: 13px;
+    z-index: 1;
 }
 
 footer .cerchio {
