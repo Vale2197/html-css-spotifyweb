@@ -135,6 +135,10 @@ header .logo {
     width: 65%;
 }
 
+header .logo .logoSmall {
+    display: none;
+}
+
 header .sideBar {
     flex-direction: column;
     justify-content: space-between;
@@ -558,3 +562,120 @@ footer .volume .insideBar .cerchio {
 /* ************
   /  FOOTER
 ************ */
+
+
+/* ************
+MEDIA QUERIES
+**************** */
+
+/* SCREEN 700PX (MD) */
+
+@media screen and (max-width:700px) {
+    .recentlyPlaied .row {
+        flex-wrap: wrap;
+    }
+
+    .recentlyPlaied .row .element, 
+    .createforUser .row .element,
+     .artistiPopolari .row .element {
+        width: 100px;
+    }
+
+    #Content .contentNav ul {
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    }
+}
+
+/* / SCREEN 700PX (MD) */
+
+
+/* SCREEN 480PX (S) */
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 0.5rem;
+    }
+
+    footer .menuPlay .icons i {
+        font-size: 0.7rem;
+    }
+
+    footer .menuPlay .icons .fa-play-circle {
+        font-size: 1rem;
+    }
+
+    #Content .contentNav li {
+        margin: 0.5rem;
+    }
+}
+/* / SCREEN 480PX (S) */
+
+
+/* SCREEN 400PX (xs) */
+
+@media screen and (max-width:400px) {
+    header .sideBar .logo .logoSmall {
+        display:block;
+        width: 1.5rem;
+    }
+
+    header .sideBar .logo .logoLg {
+        display: none;
+    }
+
+    header .sideBar .homeMenu p {
+        display: none;
+    }
+
+    header .sideBar .homeMenu img {
+        width: 1.5rem;
+    }
+
+    header .menuPlaylist {
+        display: none;
+    }
+
+    header .sideBar .user p {
+        display: none;
+    }
+
+    header {
+        width: 50px;
+    }
+
+    .user .download {
+       border: none;
+    }
+
+    #Content .contentNav ul {
+        padding-left: 50px;
+    }
+
+    .elements {
+        padding-left: 50px;
+    }
+
+    footer .album {
+        width: 100px;
+    }
+
+    footer .menuPlay {
+        width: 100px;
+    }
+
+    footer .menuPlay i {
+        padding-right: 0.5rem;
+    }
+
+    footer .menuPlay .playBar {
+        padding-top: 0.5rem;
+    }
+
+    #Content .elements .element {
+        width: 120px;
+    }
+}
+/* / SCREEN 400PX (xs) */
+
+
+
