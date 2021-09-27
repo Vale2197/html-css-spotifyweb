@@ -120,7 +120,6 @@ header {
     height: calc(100% - 80px);
     background-color: black;
     position: fixed;
-    overflow: auto;
     z-index: 2;
 
 }
@@ -143,6 +142,7 @@ header .sideBar {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    overflow: hidden;
 }
 
 /* HOME MENU */
@@ -578,7 +578,7 @@ MEDIA QUERIES
     .recentlyPlaied .row .element, 
     .createforUser .row .element,
      .artistiPopolari .row .element {
-        width: 100px;
+        width: calc(100% / 4 - 1rem);
     }
 
     #Content .contentNav ul {
@@ -594,6 +594,12 @@ MEDIA QUERIES
 @media screen and (max-width: 480px) {
     footer {
         font-size: 0.5rem;
+    }
+
+    .recentlyPlaied .row .element, 
+    .createforUser .row .element,
+     .artistiPopolari .row .element {
+        width: calc(100% / 2 - 1rem);
     }
 
     footer .menuPlay .icons i {
@@ -670,9 +676,11 @@ MEDIA QUERIES
     footer .menuPlay .playBar {
         padding-top: 0.5rem;
     }
-
-    #Content .elements .element {
-        width: 120px;
+ 
+    .recentlyPlaied .row .element, 
+    .createforUser .row .element,
+     .artistiPopolari .row .element {
+        width: calc(100% / 2 - 1rem);
     }
 }
 /* / SCREEN 400PX (xs) */
